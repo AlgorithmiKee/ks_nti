@@ -42,7 +42,7 @@ python3 export_table.py
 The code is paralellized to boost the performance. No set-up is needed when running on your own PC. However, some configurations are needed when running on the ETH Euler cluster. On ETH Euler cluster, follow the instructions below.
 1. Move to new software stack. `env2lmod`
 2. Load python 3.8 environment. `module load gcc/8.2.0 python/3.8.5`
-3. Submit the job `bsub -W <HH>:<MM> -n <Core Count> -R "rusage[mem=<Memory in MB>]" <Instructions>`
+3. Submit the job `bsub -W <HH>:<MM> -n <Core Count> -R "rusage[mem=<Memory in MB>]" <Instructions>`. We recommend to set the core count to 15 and the memory [MB] to 1500.
 
 
 
